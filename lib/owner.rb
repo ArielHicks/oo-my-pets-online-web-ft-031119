@@ -15,12 +15,6 @@ class Owner
     OWNERS.size
   end
 
-  def initialize(species)
-    @species = species
-    OWNERS << self
-    @pets = {:fishes => [], :dogs => [], :cats => []}
-  end
-
   def buy_fish(name)
     pets[:fishes] << Fish.new(name)
   end
